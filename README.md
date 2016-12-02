@@ -2,7 +2,7 @@
 A very simple sentiment analyst, using Python, TextBlob and Tweepy.
 
 # Dependencies
-Python 3.5
-Tweepy
-NumPy
-TextBlob
+<br>Python 3.5
+<br>Tweepy
+<br>NumPy
+<br>TextBlob
