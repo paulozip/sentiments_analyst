@@ -24,10 +24,13 @@ public_tweets = api.search('Trump')
 analysis = None 
 
 #Loop for which will print every tweet and its sentiment polarity
+tweets = []
 for tweet in public_tweets:
     print(tweet.text)
     analysis = tb(tweet.text)
-    print(analysis.sentiment.polarity)
+    polarity = analysis.sentiment.polarity
+    tweets.append(polarity)
+    print(polarity)
 
 #After that, let's check the average of all tweets polarity
-print('SENTIMENT AVERAGE: ' + str(np.mean(analysis.sentiment.polarity)))
+print('SENTIMENT AVERAGE: ' + str(np.mean(tweets)))
